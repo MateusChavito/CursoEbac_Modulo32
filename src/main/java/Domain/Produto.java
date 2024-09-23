@@ -6,6 +6,7 @@ import javax.persistence.*;
 @Table(name = "produtos")
 public class Produto {
 
+    //Váriaveis criadas dentro da classe produto
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,7 +24,6 @@ public class Produto {
         this.preco = preco;
     }
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
